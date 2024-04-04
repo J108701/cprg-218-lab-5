@@ -1,5 +1,5 @@
 async function fetchWeatherForCity(city) {
-    const apiKey = "32d886ed6bece429bc25f2efa8f69ca"; // 确保这是你的正确API密钥
+    const apiKey = "8e8db7d12057f5f757bdf7252d842422"; // 确保这是你的正确API密钥
     const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
 
     try {
@@ -46,7 +46,7 @@ document.getElementById('submit-button').addEventListener('click', async () => {
     await fetchWeatherForCity(selectedCity);
   });
   async function fetchWeatherForCity(city) {
-    const apiKey = "32d886ed6bece429bc25f2efa8f69ca"; // Use your correct API key
+    const apiKey = "8e8db7d12057f5f757bdf7252d842422"; // Use your correct API key
     const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
   
     try {
