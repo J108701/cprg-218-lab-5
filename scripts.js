@@ -3,7 +3,7 @@
  */
 async function fetchArticles() {
   try {
-    const response = await fetch("https://newsapi.org/v2/everything?q=Pokemon&from=2024-04-03&sortBy=popularity&apiKey=6f8566b218534c5783612402911a8cdd");
+    const response = await fetch("/.netlify/functions/fetch-news");
     const data = await response.json();
     return data.articles;
   } catch (error) {
